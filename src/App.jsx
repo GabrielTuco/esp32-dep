@@ -1,6 +1,6 @@
 
 // import { ConfigurationBar } from './Components/ConfigurationBar'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, HashRouter } from 'react-router-dom'
 import "./App.css"
 
 import StoreProvider from './context/StoreProvider'
@@ -11,9 +11,9 @@ function App() {
   return (
 
       <StoreProvider>
-        <BrowserRouter>
+        <HashRouter>
           <AppRouter />
-        </BrowserRouter>
+        </HashRouter>
       </StoreProvider>
 
   )
